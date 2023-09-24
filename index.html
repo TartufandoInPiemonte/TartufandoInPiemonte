@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Tartufando </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">TartufandoInPiemonte
+                <!-- <img src="Images/truffle.png" alt="" style="max-width:10%;max-height:35%;"> -->
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a class="menu" href="curiosità.html">Curiosità</a></li>
+                    <li><a class="menu" href="Prezzi.html">Prezzi</a></li>
+                    <li><a class="menu" href="ricetteconsigliate.html">Ricette consigliate</a></li>
+                    <li><a class="menu" href="#eventi.html">Eventi </a></li>
+                    <li><a class="menu" href="#Sudime">Contatti</a></li>
+
+                </ul>
+            </nav>
+       
+        </div>
+    </header>
+
+     <section class="hero">
+        <div class="container hero-content"> 
+            <h1> C'è più gusto con il Tartufo <br> </h1>
+            <img src="Images/truffle.png" alt="" style="max-width:20%;max-height: 30%;" class="center">
+            <h3> Sei un ristoratore? <br> 
+            <a class="hero-cta" href="#Sudime"> Contattaci e Scopri la nostra selezione di tartufi!</a> </h3>
+            <h4> All'insegna della vera <i> <span style="color: #a8a89a"> <b> cucina italiana</b> </span> </i> <br> Per <i> <span style="color: #a8a89a"> <b>ricette invitanti</b></span></i>, <i> <b>alla portata di tutti</b> </i> <br> e che aggiungono un pizzico di
+                <i> <span style="color: #a8a89a"><b>eleganza al menù</b> </span> </i> </h4>
+        </div>
+
+        
+    </section>
+   
+    <div class="subject-content">
+        <div class="img"> <img class src="Images/copy.jpg" alt=""> </div>
+   
+  
+
+    <!-- contacts -->
+    <section class="contacts">
+        <a class="anchors" id="Sudime"></a>
+        <div class="container subjects-menu-content">
+            <div class="contacts-about">
+               <h2>Su di me</h2>
+               <p>Mi chiamo Lorenzo Re, sono un giovane piemontese, amo la natura e raccoglierne i suoi frutti. Sono pieno di passioni, tra cui il surf, lo skate, la pesca in apnea, la montagna, la cucina e la raccolta di funghi e tartufi. In passato, ho lavorato come cuoco in 15 cucine tra Australia e Nuova Zelanda. Amo la varietà e la creatività che la cucina permette, vedere qualcun altro apprezzare un mio piatto mi regala parecchia soddisfazione. La passione per la raccolta dei funghi nel Biellese mi ha portato nel 2018 a scoprire la cerca dei tartufi nel Monferrato. Camminare nei boschi col cane alla loro ricerca é un'attività che mi mantiene in stretto contatto con la natura, cosa di cui sono sempre felice. Da 5 anni vendo il tartufo a ristoratori principalmente del Nord Italia, orgoglioso di vedere soddisfatti i loro bisogni e il mio tartufo degustato nei migliori piatti dai clienti.
+               </p> <br> <br> <br>
+               <img class="circular-square" src="Images/Lorenzo Re.jpg" />
+            </div>
+            
+            <div class="contacts-form">
+                <h3> <span style="color: #a8a89a">Hai intenzione di includere il Tartufo nel tuo menù? Desideri conoscere varietà, prezzi e tempi di consegna? <br>Scrivici e risponderemo al più presto!</span> </h3>
+                <form action="process_form.php" method="post">
+                    <label class="input-label" for="name">Nome completo</label>
+                    <input class="input-field" type="text" id="name" placeholder="Nome Cognome" >
+                   
+                    <label class="input-label" for="ristorante">Nome del Ristorante</label>
+                    <input class="input-field" type="text" id="ristorante" placeholder="Nome del Ristorante">
+                    
+                    <label class="input-label" for="città">Città</label>
+                    <input class="input-field" type="text" id="città" placeholder="Città">
+                    
+                    <label class="input-label" for="email">Email</label>
+                    <input class="input-field" type="email" id="email" placeholder="esempio@mail.com">
+                    
+                    <label class="input-label" for="oggetto">Oggetto</label>
+                    <input class="input-field" type="text" id="oggetto" placeholder="Oggetto" >
+                    
+                    <label class="input-label" for="">Messaggio
+                         <!-- <span>Opzionale</span>  -->
+                        </label>
+                    <textarea class="input-textarea" name="" id="" cols="30" rows="10" placeholder="Di cosa hai bisogno?"></textarea>
+                    
+                    <input class="button" type="submit" value="Invia">
+
+            
+                 </form>
+            </div>      
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright"> Lorena Galvagno copyright ©</div>
+        </div>
+    </footer>
+    
+</body>
+</html>
