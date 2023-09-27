@@ -12,7 +12,70 @@ body{
     color: whitesmoke;
     font-family: 'Work Sans', sans-serif;
     font-size: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* header */
+
+.header{
+    /* position: fixed; */
+    /* z-index: 5; */
+     top: 15px;
+     bottom: 15px;
+     left: 0;
+     width: 100%;
+     margin-bottom: 10px;
+     padding: 10px;
+ 
+ }
+ 
+ .header-container{
+     display: flex;
+     flex-wrap: wrap; /*se finisce lo spazio, va a capo*/
+ }
+ 
+ .logo{
+     font-size: 36px;
+     font-weight: 600;
+     line-height: 42px;
+     color: #a8a89a;
+     margin-right: 10px;
+     text-decoration: none;
+ }
+ 
+ .menu{
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 30px;
+     color: #b0885e /* #aea99e */;
+     text-decoration: none;
+     text-transform: uppercase;
+     margin-top: 8px;
+     }
+ 
+ .menu ul{
+     list-style-type: none;
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .menu ul li{
+  margin-right: 25px;
+ }
+
+ .content{
+    padding: 20px;
+ }
+
+ 
 
 h1,h2,h3,h4{
     margin-bottom: 25px;
@@ -25,13 +88,8 @@ h1{
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    h1{
-        font-size: 48px;
-        line-height:56px;
-    }
 
-}
+
 h2{
     font-size: 64px;
     font-weight: 600;
@@ -57,13 +115,47 @@ p{
     font-size: 22px;
 }
 
-.container{
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    max-width: 1140px;
+/* Mobile-first styles (applies to all screen sizes by default) */
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+         margin: 0 auto;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 60px;
+        line-height:40px;
+    }
+    h2{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    h4{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 14px;
+    }
+    
+   
+
 }
+
 
 .center {
     display: block;
@@ -109,6 +201,7 @@ a:hover{
     text-transform: uppercase;
 }
 
+
 .input-label span{
     font-size: 18px;
     font-weight: 400px;
@@ -132,10 +225,19 @@ a:hover{
     height: 100px;
 }
 
+@media screen and (max-width:768px) {
+    .input-label{
+        font-size: 18px;
+    }
+
+    .input-textarea,.input-field{
+        font-size: 10px;
+    }
+} 
 
 section{
-    padding-top: 44px;
-    padding-bottom: 140px;
+    padding-top: 22px;
+    padding-bottom: 20px;
 }
 
 .hero{
@@ -147,7 +249,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 20px;
 
 }
 
@@ -197,52 +299,7 @@ section{
     margin-bottom: 36px;
     max-width: 100%; */
 
-/* header */
 
-.header{
-   /* position: fixed; */
-   /* z-index: 5; */
-    top: 15px;
-    bottom: 15px;
-    left: 0;
-    width: 100%;
-    margin-bottom: 15px;
-
-}
-
-.header-container{
-    display: flex;
-    flex-wrap: wrap; /*se finisce lo spazio, va a capo*/
-}
-
-.logo{
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 42px;
-    color: #a8a89a;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.menu{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #b0885e /* #aea99e */;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: 8px;
-    }
-
-.menu ul{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu ul li{
- margin-right: 25px;
-}
 
 
 .subjects-menu{
