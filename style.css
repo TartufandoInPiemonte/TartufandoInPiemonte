@@ -237,8 +237,8 @@ a:hover{
 
 section{
     padding-top: 22px;
-    padding-bottom: 20px;
-    margin-bottom:100px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .hero{
@@ -362,9 +362,24 @@ section{
 
 /* Homepage: Su di me e contact form */
 
+.contact{
+    height: 100vh;
+
+}
+
 .contacts-content{
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:768px){
+    .contacts-content{ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;}
 }
 
 .contacts-about,
@@ -374,21 +389,17 @@ section{
     flex-shrink: 1;
 }
 
-.contacts-about{
-    width: 50%;
+
+@media screen and (max-width:768px){
+.contacts-about,
+.contacts-form{
+    width: 100%;
+    flex-grow: 1;
+}
 }
 
 
-@media screen and(max-width:768px) {
-     .contacts-content{
-        flex-direction: column;
-                     }
-     .contacts-about,
-     .contacts-form{
-        width: 100%;
-    
-     }
-     }
+
 
 
 /* Curiosità Page: menù e foto:  */
