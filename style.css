@@ -195,6 +195,26 @@ a:hover{
 
 }
 
+.form-button {
+    background-color:#b0885e; /*#a8a89a; #46362B;*/
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 600;
+    /*text-transform: uppercase;*/
+    padding: 12px 24px;
+    border: none;
+    border-radius: 37px;
+    text-decoration: none;
+}
+
+  @media screen and (max-width:768px) {
+    .form-button{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+}
+
 .button:hover{
     background-color: #c0ae9c;
     color: whitesmoke;
@@ -546,6 +566,17 @@ section{
 .copyright p{
     font-size: 18px;
 }
+
+@media screen and (max-width:768px){
+    .copyright { 
+        font-size:  10px;
+    }
+   }
+   @media screen and (max-width:768px){
+    .copyright p { 
+        font-size:  12px;
+    }
+   }
 
 .anchors{
     visibility: hidden;
